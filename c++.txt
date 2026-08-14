@@ -9,8 +9,7 @@ int main() {
 int main() {
     int favoriteNumber; // Creates an integer variable to hold a number
     
-    std::cout << "Enter your favorite number: ";
-    std::cin >> favoriteNumber; // Takes input from the keyboard
+    
     
     std::cout << "Awesome! Your favorite number is " << favoriteNumber << "." << std::endl;
     
