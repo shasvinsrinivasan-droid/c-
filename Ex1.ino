@@ -1,10 +1,12 @@
 int i,p;
-void setup() {
-  p=1;
-  pinMode(10,INPUT);//pin in kit (SS)->(SWI)
-  for(int i=2;i<=9;i++){
-    pinMode(i,OUTPUT);
-  }
+void pattern4(){
+  for(i=2;i<=9;i++){
+    digitalWrite(i,HIGH);
+    digitalWrite((i+1),HIGH);
+    delay(500);
+  digitalWrite(i,LOW);
+    digitalWrite((i+1),LOW);
+    delay(500);
 }
 
 void loop() {
